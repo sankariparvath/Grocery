@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grosery Store</title>
+    <!-- swiperjs link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- swiperjs link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="offer"><a href="#">
+                <marquee behavior="scrolling" direction="right" loop class="marq">Enjoy <span class="one"> 2% discount
+                    </span> on all items for purchase value above <span class="two"> Rs.500/-</span></marquee>
+        </div></a>
+        <a href="#" class="logo">
+            <i class="fas fa-shopping-basket"></i>Sagi</a>
+        <div class="nav-bar">
+            <nav class="navbar">
+                <a href="/Grocery/websait/home/index.html" id="home">Home</a>
+                <a href="/Grocery/websait/about us/about.html" id="about">about us</a>
+                <a href="/Grocery/websait/products/products.html" id="products">products</a>
+                <a href="/Grocery/websait/categories/categories.html" id="categories">categories</a>
+                <a href="/Grocery/websait/review/review.html" id="review">review</a>
+                <a href="/Grocery/websait/contact/contact.html" id="contact">contact</a>
+            </nav>
+        </div>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn" onclick="fun3()"></div>
+            <div class="fas fa-search" id="search-btn" onclick="fun()"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn" onclick="fun1()"></div>
+            <div class="fas fa-user" id="user-btn" onclick="fun2()"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search hear...">
+            <label for="search-box" class=" fas fa-search  "></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="/Grocery/websait/images/images (1).jpg" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="pricr">$4.99/-</span>
+                    <span class="quantity">qty:1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="/Grocery/websait/images/onian.jpg" alt="">
+                <div class="content">
+                    <h3>onian</h3>
+                    <span class="pricr">$4.99/-</span>
+                    <span class="quantity">qty:1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="/Grocery/websait/images/chk.png" alt="">
+                <div class="content">
+                    <h3>chiken</h3>
+                    <span class="pricr">$4.99/-</span>
+                    <span class="quantity">qty:1</span>
+                </div>
+            </div>
+            <div class="total">total : $19.99/-</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="  your email" class="box">
+            <input type="password" placeholder="  your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </header>
+    <!-- home start-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh and <span>organic </span>products for your</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempora illo, omnis tempore provident
+                repellat?</p>
+            <a href="#" class="btn">shope now</a>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- features start -->
+    <section class="features" id="features">
+        <h1 class="heading">our <span> features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="/Grocery/websait/images/basket.png" alt="">
+                <h3>fresh and organic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, doloremque!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="/Grocery/websait/images/delivery.png" alt="">
+                <h3>free delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, doloremque!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="/Grocery/websait/images/pay.png" alt="">
+                <h3>easy payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, doloremque!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- features end -->
+
+    <!-- review section stsrt -->
+    <section class="review" id="review">
+        <h1 class="heading">costomer's<span>review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocery/websait/images/client-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus alias quos cum enim. Ut
+                        commodi praesentium ad magnam accusantium?</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Grocery/websait/images/client-2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus alias quos cum enim. Ut
+                        commodi praesentium ad magnam accusantium?</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Grocery/websait/images/client-3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus alias quos cum enim. Ut
+                        commodi praesentium ad magnam accusantium?</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Grocery/websait/images/client-4.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus alias quos cum enim. Ut
+                        commodi praesentium ad magnam accusantium?</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section end -->
+    <!-- bloge section -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="/Grocery/websait/images/dlog-diry.png" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>22 jan, 2023</a>
+                    </div>
+                    <h3>fresh and organic begtables and fruites</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptatum.</p>
+                    <a href="" class="btn" id="btn1">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/Grocery/websait/images/blog-7.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>22 jan, 2023</a>
+                    </div>
+                    <h3>fresh and organic begtables and fruites</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptatum.</p>
+                    <a href="" class="btn" id="btn2">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/Grocery/websait/images/blogs-2.jpg" alt=""
+                    style="display: block; background-position: center;">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i>by user</a>
+                        <a href="#"><i class="fas fa-calendar"></i>22 jan, 2023</a>
+                    </div>
+                    <h3>fresh and organic begtables and fruites</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptatum.</p>
+                    <a href="" class="btn" id="btn3">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bloge end -->
+
+    <!-- counter Up start -->
+    <div class="box-cont">
+        <div class="box">
+            <i class="fas fa-history"></i>
+            <h3 class="title">succesfull jurny</h3>
+            <span class="counter">25</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-award"></i>
+            <h3 class="title">awards</h3>
+            <span class="counter">80</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-earth"></i>
+            <h3 class="title">customers</h3>
+            <span class="counter">100000</span>
+        </div>
+        <div class="box">
+            <i class="fas fa-gifts"></i>
+            <h3 class="title">free gifts</h3>
+            <span class="counter">1000</span>
+        </div>
+    </div>
+    <!-- counter Up end -->
+
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>sagi <i class="fas fa-shopping-basket"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eum.</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-square" id="fb"></a>
+                    <a href="" class="fab fa-twitter-square" id="tw"></a>
+                    <a href="" class="fab fa-instagram-square" id="inst"></a>
+                    <a href="" class="fab fa-linkedin-in" id="lin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="" class="links"><i class="fas fa-phone-volume"></i>+91 6675497834</a>
+                <a href="" class="links"><i class="fas fa-phone-volume"></i>+91 6765497834</a>
+                <a href="" class="links"><i class="fas fa-envelope"></i>sagigrocery@gmail.com</a>
+                <a href="" class="links"><i class="fas fa-location-pin"></i>109, sivan kovil street n.e.v palayam
+                    thiruvallur, chennai-600067</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i>about us </a>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i> products</a>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i> categories</a>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="" class="links"><i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+            <div class="box" id="news">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="text" placeholder="your email" class="email">
+                <input type="text" value="subscribe" class="btn">
+                <img src="/Grocery/websait/images/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+        <div class="credit">copywright<span>&copy;</span>2023 created by <span>m.sankari</span> | all rights reserved</div>
+    </section>
+    <!-- footer section end -->
+
+
+
+
+
+
+    <!-- swiperjslink -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiperjslink -->
+    <script src="script.js"></script>
+</body>
+
+</html>
